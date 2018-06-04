@@ -9,12 +9,14 @@
         <c:url value="/index.js" var="indexScriptUrl"/>
         <c:url value="/login.js" var="loginScriptUrl"/>
         <c:url value="/profile.js" var="profileScriptUrl"/>
+        <c:url value="/product.js" var="productScriptUrl"/>
         <c:url value="/back-to-profile.js" var="backToProfileScriptUrl"/>
         <c:url value="/logout.js" var="logoutScriptUrl"/>
         <link rel="stylesheet" type="text/css" href="${styleUrl}">
         <script src="${indexScriptUrl}"></script>
         <script src="${loginScriptUrl}"></script>
         <script src="${profileScriptUrl}"></script>
+        <script src="${productScriptUrl}"></script>
         <script src="${backToProfileScriptUrl}"></script>
         <script src="${logoutScriptUrl}"></script>
         <title>App</title>
@@ -22,7 +24,7 @@
 <body>
 <div id="logout-content" class="hidden content">
     <button id="logout-button" class="button">Logout</button>
-    <button id="listproducts-button" class="button">List Products</button>
+    <button id="products-button" class="button">List Products</button>
 </div>
 
 <div id="login-content" class="content">
