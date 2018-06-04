@@ -108,6 +108,12 @@ function onLoad() {
     const listProductButtonEl = document.getElementById('products-button');
     listProductButtonEl.addEventListener('click', onListProductButtonClicked);
 
+    const listOrderButtonEl = document.getElementById('orders-button');
+    listOrderButtonEl.addEventListener('click', onListOrderButtonClicked);
+
+    const listDetailedProductButtonEl = document.getElementById('orders2-button');
+    listDetailedProductButtonEl.addEventListener('click', onListDetailedOrderButtonClicked);
+
     if (hasAuthorization()) {
         onProfileLoad(getAuthorization());
     }
