@@ -10,16 +10,16 @@
     display: none;
 }
 
-table, tr, td {
-border: thin solid black;
+thead, td {
+border-bottom: 1px solid #009933;
 }
 
 td {
-padding: 5px;
+    padding: 5px;
 }
 
 .button {
-    background-color: green;
+    background-color: #009933;
     border: none;
     border-radius: 4px;
     color: white;
@@ -32,6 +32,32 @@ padding: 5px;
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: #006622;
+    color: white;
+}
+
+table{
+    border: 1px solid #009933;
+    border-collapse: collapse;
+}
 button:focus{
     background:olive;
+}
+
+.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+tr:hover {background-color: olive;}
+
+
+table {
+    width: 100%;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

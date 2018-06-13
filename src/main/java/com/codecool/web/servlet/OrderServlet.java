@@ -22,7 +22,7 @@ public class OrderServlet extends AbstractServlet {
         try (Connection c = getConnection(req.getServletContext())) {
             OrderDao orderDao = new DatabaseOrderDao(c);
             String customerId = ((User)req.getSession().getAttribute("user")).getId();
-            List<Order> orders = orderDao.findDetailedOrdersByUser(customerId);
+            List<Order> orders = orderDao.findOrdersByUser(customerId);
 
             resp.setContentType("application/json");
             sendMessage(resp, HttpServletResponse.SC_OK, orders);

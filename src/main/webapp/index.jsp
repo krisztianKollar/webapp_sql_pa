@@ -11,7 +11,6 @@
         <c:url value="/profile.js" var="profileScriptUrl"/>
         <c:url value="/product.js" var="productScriptUrl"/>
         <c:url value="/order.js" var="orderScriptUrl"/>
-        <c:url value="/back-to-profile.js" var="backToProfileScriptUrl"/>
         <c:url value="/logout.js" var="logoutScriptUrl"/>
         <link rel="stylesheet" type="text/css" href="${styleUrl}">
         <script src="${indexScriptUrl}"></script>
@@ -19,14 +18,13 @@
         <script src="${profileScriptUrl}"></script>
         <script src="${productScriptUrl}"></script>
         <script src="${orderScriptUrl}"></script>
-        <script src="${backToProfileScriptUrl}"></script>
         <script src="${logoutScriptUrl}"></script>
         <title>App</title>
     </head>
 <body>
 <div id="logout-content" class="hidden content">
     <button id="logout-button" class="button">Logout</button>
-    <button id="products-button" class="button">List Products</button>
+    <button id="products-button" class="button">Products</button>
     <button id="orders-button" class="button">See Your Orders</button>
     <button id="orders2-button" class="button">List Your Detailed Orders</button>
 </div>
@@ -46,20 +44,15 @@
 
 </div>
 
-<div id="back-to-profile-content" class="hidden content">
-    <button onclick="onBackToProfileClicked();">Back to profile</button>
-</div>
-
-
-<div id="products" class="hidden content">
+<div id="products" style='width:70%; margin:auto;' class="hidden content">
     <h2>Available Products</h2>
 </div>
 
-<div id="orders" class="hidden content">
+<div id="orders" style='width:70%; margin:auto;' class="hidden content">
     <h2>Orders</h2>
 </div>
 
-<div id="orders2" class="hidden content">
+<div id="orders2" style='width:70%; margin:auto;' class="hidden content">
     <h2>Detailed Orders</h2>
 </div>
 

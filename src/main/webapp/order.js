@@ -12,6 +12,8 @@ function onListOrderButtonClicked() {
 function onOrderResponse() {
     const responseText = JSON.parse(this.responseText);
     const ordersDiv = document.getElementById("orders");
+    const title = document.createElement('h2');
+    title.innerHTML = 'Orders';
     const ordersTable = document.createElement("table");
 
     const header = ordersTable.createTHead();
@@ -42,6 +44,7 @@ function onOrderResponse() {
         ordersTable.appendChild(tr);
         }
 
+        ordersDiv.appendChild(title);
         ordersDiv.appendChild(ordersTable);
 
         ordersDiv.classList.remove("hidden");
